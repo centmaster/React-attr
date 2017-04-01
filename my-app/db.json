@@ -1,0 +1,83 @@
+{
+  "activity": [
+    {
+      "begindate": "20170322",
+      "enddate": "20170401",
+      "onlinestate": "online",
+      "prize": [
+        {
+          "prizename": "mobile",
+          "number": "3",
+          "rate": "0.001"
+        },
+        {
+          "prizename": "callprize",
+          "number": "100",
+          "rate": "0.1"
+        },
+        {
+          "prizename": "apple",
+          "number": "1000",
+          "rate": "0.3"
+        },
+        {
+          "prizename": "nothing",
+          "number": "10000",
+          "rate": "0.6"
+        }
+      ]
+    },
+    {
+      "begindate": "20170327",
+      "enddate": "20170411",
+      "onlinestate": "offline",
+      "prize": [
+        {
+          "prizename": "mobile",
+          "number": "1",
+          "rate": "0.004"
+        },
+        {
+          "prizename": "daijiquan",
+          "number": "100",
+          "rate": "0.2"
+        },
+        {
+          "prizename": "pine",
+          "number": "1500",
+          "rate": "0.3"
+        },
+        {
+          "prizename": "nothing",
+          "number": "10000",
+          "rate": "0.5"
+        }
+      ]
+    }
+  ],
+  "custom": [
+    {
+      "begindate": "20170327",
+      "id": "chenyitian",
+      "chance": "1",
+      "haveGet": false
+    },
+    {
+      "begindate": "20170322",
+      "id": "centmaster",
+      "chance": "0",
+      "haveGet": true
+    },
+    {
+      "targetAttribute": "aaa",
+      "id": "H1uaoouhg"
+    },
+    {
+      "targetAttribute": "chen",
+      "id": "Byq-Ts_3g"
+    },
+    {
+      "id": "chen"
+    }
+  ]
+}

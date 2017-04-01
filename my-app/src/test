@@ -1,0 +1,77 @@
+var Third=React.createClass({
+
+    findNumber:function (e) {
+        console.log(e.target.getAttribute('data'));
+        switch(e.target.id){
+            case 'name':
+                console.log('name');
+                break;
+            case 'number':
+                console.log('number');
+                break;
+            case 'rate':
+                console.log('rate');
+                break;
+        }
+        //alert(key);
+    },
+    returnMain:function () {
+      this.props.changePage(3);
+      this.props.changePage(1);
+    },
+
+    render:function () {
+
+        var that=this;
+        var prizeList = this.props.prize.map(function (obj,i) {
+            return (
+                <div key={'prize-item-'+i} onBlur={that.findNumber} >
+                    <div>
+                        <Button type="primary"  style={{width:80}}>{obj.name}</Button>
+                        <input id="name" data={i}/>
+                        <Button type="primary" style={{width:80}}>{obj.number}</Button>
+                        <input id="number"data={i}/>
+                        <Button type="primary" style={{width:80}}>{obj.rate}</Button>
+                        <input id="rate"data={i}/>
+                    </div>
+
+
+                </div>
+            )
+        })
+
+
+
+        return(
+            <div className="ThirdPage" style={{display:this.props.show3}}>
+                <span>配置奖品</span>
+                {prizeList}
+                <div>
+                    <Button type="primary" style={{width:80}} onClick={this.returnMain}>返回主界面</Button>
+                </div>
+            </div>
+
+        )
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div className="activeId" style={{display:this.state.show[1]}}>
+                    <input onChange={this.changeValue} placeholder/>
+                    <div className="activeButton">
+                        <Button type="primary" onClick={this.searchActiveId} >输入活动ID</Button>
+                        <Button type="primary" onClick={this.customId} >操作用户</Button>
+                    </div>
+                </div>
